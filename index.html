@@ -38,15 +38,30 @@
             margin-bottom: 3rem;
         }
 
+        .header-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         header h1 {
             font-size: 2.5rem;
             color: var(--accent-color);
+            margin-top: 1rem;
         }
 
         header p {
             color: var(--text-muted);
             font-size: 1.1rem;
             margin-top: 0.5rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
         }
 
         .contact-links {
@@ -65,6 +80,22 @@
 
         .contact-links a:hover {
             text-decoration: underline;
+        }
+
+        .download-cv-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 0.7rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-cv-btn:hover {
+            background-color: #2ab7f1;
         }
 
         section {
@@ -153,12 +184,17 @@
     <div class="container">
         <!-- HEADER -->
         <header>
-            <h1>Muhammad Aqif Addin Bin Malik</h1>
-            <p>IT & Data Science Graduate | Aspiring Software Developer</p>
-            <div class="contact-links">
-                <a href="mailto:aqifaddin@gmail.com">aqifaddin@gmail.com</a>
-                <a href="tel:0198941936">019-894 1936</a>
-                <span>Shah Alam, Selangor</span>
+            <div class="header-info">
+                <img src="ChatGPT Image May 18, 2026, 12_47_16 AM.png" alt="Muhammad Aqif Addin Malik Profile Picture" class="profile-img">
+                <h1>Muhammad Aqif Addin Bin Malik</h1>
+                <p>IT & Data Science Graduate | Aspiring Software Developer</p>
+                <div class="contact-links">
+                    <a href="mailto:aqifaddin@gmail.com">aqifaddin@gmail.com</a>
+                    <a href="tel:0198941936">019-894 1936</a>
+                    <span>Shah Alam, Selangor</span>
+                </div>
+                <!-- Added Download CV Button -->
+                <a href="path/to/your/CV.pdf" download="Muhammad_Aqif_Addin_Malik_CV.pdf" class="download-cv-btn">Download CV / Resume</a>
             </div>
         </header>
 
@@ -170,6 +206,7 @@
             and self-motivated individual seeking a challenging opportunity in an
             organization to utilize my capabilities and creativity while developing
             my skills and contributing to organizational goals</p>
+            <p>This project is supervised by Ts. Dr. Fakhitah Binti Ridzuan. To view details, visit the <a href="fypproject.html" style="color: var(--accent-color);">FYP Project</a>.</p>
         </section>
 
         <!-- SKILLS -->
@@ -206,7 +243,246 @@
                         <span class="tag">React</span>
                         <span class="tag">Flask</span>
                         <span class="tag">Frontend</span>
-                        <span class="tag">Backend</span>
+                       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Aqif Addin Bin Malik | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-top: 1rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .contact-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-links a, .contact-links span {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #7dd3fc; /* Lighter sky blue */
+            transform: translateY(-2px);
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: var(--bg-color);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.8rem;
+        }
+
+        .tag {
+            background: #0284c7;
+            color: white;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+        }
+
+        ul {
+            list-style-position: inside;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            list-style-type: disc;
+        }
+
+        .award-item, .exp-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .award-item h3, .exp-item h3 {
+            font-size: 1.1rem;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <img src="ChatGPT Image May 18, 2026, 12_47_16 AM.png" alt="Muhammad Aqif Addin Malik" class="profile-img">
+            <h1>Muhammad Aqif Addin Bin Malik</h1>
+            <p>IT & Data Science Graduate | Aspiring Software Developer</p>
+            <div class="contact-links">
+                <a href="mailto:aqifaddin@gmail.com">aqifaddin@gmail.com</a>
+                <a href="tel:0198941936">019-894 1936</a>
+                <span>Shah Alam, Selangor</span>
+            </div>
+            <a href="#" class="btn-download" download="MuhammadAqifAddinMalik_Resume.pdf">Download Resume</a>
+        </header>
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Me</h2>
+            <p>Freshly graduated IT & Data Science student with a passion for programming, database management, and emerging technologies. A dedicated, self-motivated individual seeking a challenging opportunity in an organization to utilize my capabilities and creativity while continuously developing my skills and contributing to organizational goals.</p>
+        </section>
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Languages & Web</h3>
+                    <p>Python, Java, Dart (Flutter), PHP, JavaScript, React, Flask, HTML/CSS</p>
+                </div>
+                <div class="card">
+                    <h3>Data Science & DB</h3>
+                    <p>MySQL, SQL, Firebase, Pandas, NumPy, EDA, Data Dashboards</p>
+                </div>
+                <div class="card">
+                    <h3>Hardware & Tools</h3>
+                    <p>Arduino IDE, Visual Studio, CapCut, Adobe Premiere, Git/GitHub</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Smartlink Innovation - Ecowatch</h3>
+                    <span class="date">Oct 2025 - Jun 2026</span>
+                    <p>IoT-based water pollution monitoring system using machine learning for real-time water quality assessments.</p>
+                    <div class="tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Flask</span>
                     </div>
                 </div>
 
@@ -218,18 +494,19 @@
                         <span class="tag">React</span>
                         <span class="tag">Flask</span>
                         <span class="tag">Python</span>
-                        <span class="tag">IoT</span>
+                        <span class="tag">AI</span>
                     </div>
                 </div>
 
                 <div class="card">
                     <h3>IoT Water Leakage Detection</h3>
                     <span class="date">Oct 2024 - Jun 2025</span>
-                    <p>IoT system engineered to locate precise leakage positions within water piping networks.</p>
+                    <p>IoT system engineered to locate precise leakage positions within water piping networks using sensor data.</p>
                     <div class="tags">
                         <span class="tag">Arduino</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Hardware</span>
+                        <span class="tag">Sensors</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">IoT</span>
                     </div>
                 </div>
             </div>
@@ -239,18 +516,20 @@
         <section>
             <h2>Work Experience</h2>
             <div class="exp-item">
-                <h3>Network Operation Center (NOC) Staff — Kabaz Sdn Bhd</h3>
+                <h3>Network Operation Center (NOC) Staff</h3>
+                <p class="company">Kabaz Sdn Bhd</p>
                 <span class="date">Sep 2022 - Sep 2023</span>
                 <ul>
-                    <li>Provided 1st and 2nd level technical support, on-site installation, and troubleshooting.</li>
-                    <li>Prepared monthly Network TM IPVPN Performance & Utilization reports.</li>
+                    <li>Provided 1st and 2nd level technical support, on-site installation, and troubleshooting for client network infrastructures.</li>
+                    <li>Prepared monthly Network TM IPVPN Performance & Utilization reports, analyzing metrics for optimization.</li>
                 </ul>
             </div>
             <div class="exp-item">
-                <h3>NOC Intern — Kabaz Sdn Bhd</h3>
+                <h3>NOC Intern</h3>
+                <p class="company">Kabaz Sdn Bhd</p>
                 <span class="date">Mar 2022 - Aug 2022</span>
                 <ul>
-                    <li>Handled user support requests and completed intensive hands-on network operations training.</li>
+                    <li>Managed user support tickets and assisted with basic network configuration and monitoring tasks.</li>
                 </ul>
             </div>
         </section>
@@ -267,23 +546,8 @@
             </ul>
         </section>
 
-        <!-- EDUCATION -->
-        <section>
-            <h2>Education</h2>
-            <div class="exp-item">
-                <h3>Bachelor of IT (Hons) Track in Data Science</h3>
-                <span class="date">Universiti Malaysia Kelantan | 2023 - 2026</span>
-                <p>CGPA: 3.41</p>
-            </div>
-            <div class="exp-item">
-                <h3>Diploma in Database Management & Web Application</h3>
-                <span class="date">Kolej Vokasional Shah Alam | 2018 - 2022</span>
-                <p>CGPA: 3.62</p>
-            </div>
-        </section>
-
         <footer>
-            <p>© 2026 Muhammad Aqif Addin Bin Malik</p>
+            <p>© 2026 Muhammad Aqif Addin Bin Malik. Clean portfolio template.</p>
         </footer>
     </div>
 
